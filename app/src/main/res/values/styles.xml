@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="buttonStyle">@style/MainButton</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="autoCompleteTextViewStyle">@style/CursorColor</item>
+    </style>
+
+    <style name="AppTheme.NoTitle" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="Widget.MyApp.Toolbar.Solid" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/actionbar_color</item>
+        <item name="android:elevation" tools:ignore="NewApi">4dp</item>
+    </style>
+
+    <style name="ThemeOverlay.MyApp.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/actionbar_title_text</item>
+    </style>
+
+    <style name="Border">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey400</item>
+    </style>
+
+    <style name="HintText">
+        <item name="android:layout_marginBottom">@dimen/hint_margin</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:paddingTop">@dimen/hint_margin</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditTextSingleLine" parent="EditText">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="InputContainer">
+        <item name="android:layout_margin">@dimen/input_margin</item>
+    </style>
+
+    <style name="SessionContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/input_margin</item>
+        <item name="android:layout_marginRight">@dimen/input_margin</item>
+        <item name="android:layout_marginTop">@dimen/session_margin</item>
+        <item name="android:layout_marginBottom">@dimen/session_margin</item>
+    </style>
+
+    <!-- Button -->
+    <style name="MainButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorButtonNormal">@color/primary</item>
+        <item name="colorControlHighlight">@color/grey800</item>
+    </style>
+
+    <style name="PinkButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:gravity">center</item>
+        <item name="colorAccent">@color/pink500</item>
+        <item name="colorButtonNormal">@color/pink500</item>
+        <item name="colorControlHighlight">@color/grey800</item>
+    </style>
+
+    <style name="GreenButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:gravity">center</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="colorButtonNormal">@color/green</item>
+        <item name="colorControlHighlight">@color/grey800</item>
+    </style>
+
+    <style name="GreyButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:gravity">center</item>
+        <item name="colorAccent">@color/grey400</item>
+        <item name="colorButtonNormal">@color/grey600</item>
+        <item name="colorControlHighlight">@color/grey800</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GhostGreyButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:background">@drawable/ghost_button_white_outline</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TransparentButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:gravity">center</item>
+        <item name="android:theme">@style/Theme.AppCompat.Light</item>
+    </style>
+
+    <style name="TransparentMainButton" parent="TransparentButton">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="TransparentGreenButton" parent="TransparentButton">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="TransparentPinkButton" parent="TransparentButton">
+        <item name="android:textColor">@color/pink500</item>
+    </style>
+
+    <style name="TransparentWhiteButton" parent="TransparentButton">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

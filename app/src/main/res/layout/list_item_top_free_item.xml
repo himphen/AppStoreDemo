@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="?android:attr/selectableItemBackground"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/countTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iconIv"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/categoryTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ratingStar1Iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/star" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ratingStar2Iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ratingStar3Iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ratingStar4Iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ratingStar5Iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ratingCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
